@@ -16,8 +16,7 @@ class ParMux < Formula
   end
 
   def install
-    # The release archives wrap the binary in a target-named directory.
-    bin.install Dir["par-mux-v*/par-mux"].first => "par-mux"
+    bin.install "par-mux"
   end
 
   def caveats
